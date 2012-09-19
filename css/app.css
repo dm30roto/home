@@ -8,7 +8,7 @@ p, span, td, li {
 	color:#E9E9E9;
 	line-height:1.2;		
 }
-a { color:#999999; }
+a { color:#1BA1E2; }
 h2 {
 	text-transform:uppercase;
 	color:white;
@@ -66,10 +66,12 @@ h3 {
 }
 .content_container a {
 	text-decoration:underline;
+	opacity: 0.85;
 }
 .content_container a:hover {
 	color:#FFF;	
-	text-shadow: 1px 1px 2px #FFF;
+	text-shadow: 2px 2px 5px #FFF;
+	opacity:1;
 }
 
 /* Each sections style */
@@ -125,7 +127,7 @@ nav {
 	text-shadow: 2px 2px 10px #666;
 }
 .nav_list li a:hover {	
-	text-shadow: 1px 1px 2px #fff;
+	text-shadow: 2px 2px 10px #fff;
 }
 
 /* Jobs list style */
