@@ -1,19 +1,13 @@
 <!DOCTYPE html>
-    <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-    <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-    <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-    <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-    <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
     <head>
         <meta charset="utf-8" />
         <!-- Set the viewport width to device width for mobile -->
         <meta name="viewport" content="width=device-width" />
         <title>Daniel Rotondo - Part Developer, Part UX/UI, All Good</title>
-        <!-- Included CSS Files -->
-        <link rel="icon" type="image/png" href="favicon.ico">
-        <link href='http://fonts.googleapis.com/css?family=Oswald:400' rel='stylesheet' type='text/css'>
-        <link href="css/foundation.css" rel="stylesheet" type="text/css">
-       	<link href="css/app.css" rel="stylesheet" type="text/css">
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="bootstrap/js/google-code-prettify/prettify.css" rel="stylesheet">
+        <link href="css/app.css" rel="stylesheet">
         <!--[if lt IE 9]>
             <link rel="stylesheet" href="stylesheets/ie.css">
         <![endif]-->
@@ -34,18 +28,27 @@
 		</script>
     </head>
     <body> 
-        <div class="container outside_box">
-            <div class="row">
-            	<h2 class="logo"><a href="#about" class="nav-button">D&nbsp;|&nbsp;R</a></h2>
-                <nav>
-                    <ul class="nav_list">
-                        <li><a href="#about" class="nav-button">About</a></li>
-                        <li><a href="#portfolio" class="nav-button">Portfolio</a></li>	
-                        <li><a href="#contact" class="nav-button">Contact</a></li>
-                        <li><a href="DanielRotondoResume.pdf">r&Eacute;sum&Eacute;</a></li>
-                    </ul>
-                </nav>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+          <div class="navbar-inner">
+            <div class="container">
+              <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="#about" class="brand">D&nbsp;|&nbsp;R</a>
+              <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>  
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="DanielRotondoResume.pdf">R&eacute;sum&eacute;</a></li>
+                </ul>
+              </div>
             </div>
+          </div>
+        </div>
+        <div class="container outside_box">
             <div class="row">
                 <div class="twelve columns content_container">
                 	<div id="about" class="row section">
@@ -133,12 +136,28 @@
                 </div>
             </div>
         </div>
-        <script src="javascripts/modernizr.foundation.js"></script>
-        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-1.7.1.min.js"></script>
+        <script src="js/app.js"></script>
         <script src="js/jquery.lettering.js"></script>
         <script src="js/jquery.lettering.animate.compressed.js"></script>
-        <script src="js/foundation.js"></script>
-        <script src="js/modernizr.foundation.js"></script>
-        <script src="js/app.js"></script>
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+        <script src="bootstrap/js/jquery.js"></script>
+        <script src="bootstrap/js/google-code-prettify/prettify.js"></script>
+        <script src="bootstrap/js/bootstrap-transition.js"></script>
+        <script src="bootstrap/js/bootstrap-alert.js"></script>
+        <script src="bootstrap/js/bootstrap-modal.js"></script>
+        <script src="bootstrap/js/bootstrap-dropdown.js"></script>
+        <script src="bootstrap/js/bootstrap-scrollspy.js"></script>
+        <script src="bootstrap/js/bootstrap-tab.js"></script>
+        <script src="bootstrap/js/bootstrap-tooltip.js"></script>
+        <script src="bootstrap/js/bootstrap-popover.js"></script>
+        <script src="bootstrap/js/bootstrap-button.js"></script>
+        <script src="bootstrap/js/bootstrap-collapse.js"></script>
+        <script src="bootstrap/js/bootstrap-carousel.js"></script>
+        <script src="bootstrap/js/bootstrap-typeahead.js"></script>
+        <script src="bootstrap/js/bootstrap-affix.js"></script>
+        <script src="bootstrap/js/application.js"></script>
+        <script src="bootstrap/js/app.js"></script>
     </body>
 </html>
