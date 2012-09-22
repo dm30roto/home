@@ -1,5 +1,5 @@
 jQuery(document).ready(function ($) {	
-	$('.logo a').click(function(){
+	$('a.brand').click(function(){
 		var el = $(this).attr('href');
 		var elWrapped = $(el);
 		scrollToDiv(elWrapped,150);
@@ -21,5 +21,5 @@ jQuery(document).ready(function ($) {
 		}, 500);
 	
 	}  
-	$(".logo a").lettering().animateLetters({opacity:0},{opacity:1},{time:1200,reset:true});
+	//$("a.brand").lettering().animateLetters({opacity:0},{opacity:1},{time:1200,reset:true});
 });
