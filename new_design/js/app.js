@@ -2,13 +2,13 @@ jQuery(document).ready(function ($) {
 	$('a.brand').click(function(){
 		var el = $(this).attr('href');
 		var elWrapped = $(el);
-		scrollToDiv(elWrapped,150);
+		scrollToDiv(elWrapped,50);
 		return false;
 	});
 	$('.nav li a').click(function(){
 		var el = $(this).attr('href');
 		var elWrapped = $(el);
-		scrollToDiv(elWrapped,150);
+		scrollToDiv(elWrapped,50);
 		return false;
 	});
 	function scrollToDiv(element,navheight){
