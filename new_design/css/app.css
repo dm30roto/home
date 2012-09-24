@@ -52,6 +52,9 @@ h3 {
 .heading_banner+p, .heading_banner+h3 {
 	padding-top:10px;	
 }
+#about {
+	margin-top: 4%;
+}
 /* Content containter style */
 .content_container a {
 	text-decoration:underline;

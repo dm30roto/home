@@ -5,7 +5,7 @@ jQuery(document).ready(function ($) {
 		scrollToDiv(elWrapped,50);
 		return false;
 	});
-	$('.nav li a').click(function(){
+	$('.main-menu li a').click(function(){
 		var el = $(this).attr('href');
 		var elWrapped = $(el);
 		scrollToDiv(elWrapped,50);
