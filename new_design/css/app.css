@@ -58,6 +58,15 @@ h2 {
 .heading_banner+p, .heading_banner+h3 {
 	padding-top:10px;	
 }
+.name { 
+	color: #1BA1E2;
+	font-weight:bold;
+	font-size:24px;
+	margin-left:2px;
+}
+.parts {
+	color: #1BA1E2;
+}
 #about {
 	margin-top: 4%;
 }
@@ -86,12 +95,8 @@ h2 {
 	color:#869595;
 	display:none;
 }
-.submit-icons {
-	margin-top:18px;
-}
 /* Social media links/icons */
 .social_media {
-	margin-left:15px;
 	list-style: none;
 	display:inline;	
 }
@@ -144,6 +149,7 @@ form input, form textarea {
 	width:99%;
 }
 .btn-submit {
+  margin-top:15px;
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #49afcd;
