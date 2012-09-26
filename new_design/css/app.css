@@ -71,37 +71,45 @@ h2 {
 	text-shadow: 2px 2px 5px #FFF;
 	opacity:1;
 }
-
 /* Jobs list style */
 .jobs_list {
     list-style: none;
 }
 .jobs_list > li h3:before {
     content: "★";
+	font-size:16px;
+	vertical-align:top;
     padding-right: 0.2em; 
 }
 .badge { background-color:#666; }
 .skill_used_title {
 	color:#869595;
+	display:none;
+}
+.submit-icons {
+	margin-top:18px;
 }
 /* Social media links/icons */
 .social_media {
 	margin-left:15px;
-	list-style: none;	
+	list-style: none;
+	display:inline;	
 }
 .social_media li {
-	margin-bottom:20px;
-	opacity:0.5;	
+	display:inline;
 }
 .social_media li:hover {
-	opacity:1;
+	opacity:0.5;
 	cursor:pointer;
 }
 .icons {
 	height:32px;
 	width:32px;
-	-moz-border-radius: 8px;
-	border-radius: 8px;
+	float:left;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	margin-right:15px;
+	margin-bottom:15px;
 }
 .google-plus {
 	background:url(../imgs/social_media_icons.jpg) -158px 0;	
@@ -133,7 +141,7 @@ form label {
 	font-size:18px;
 }
 form input, form textarea {
-	width:100%;
+	width:99%;
 }
 .btn-submit {
   color: #ffffff;
