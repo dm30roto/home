@@ -22,4 +22,17 @@ jQuery(document).ready(function ($) {
 	
 	}  
 	//$("a.brand").lettering().animateLetters({opacity:0},{opacity:1},{time:1200,reset:true});
+	function sendMail() {
+		// First check fields aren't blank 
+		
+		// Make a request to backend
+		$.ajax({
+		  type: 'POST',
+		  url: 'email.php',
+		  data: data,
+		  success: function () { alert('Email Success!'); },
+		  error: function() { alert('Email error'); },
+		  dataType: dataType
+		});	
+	}
 });
