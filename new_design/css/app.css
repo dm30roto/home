@@ -6,6 +6,7 @@ body {
 }
 p, span, td, li, h3, form label {
 	color:#E9E9E9;
+	letter-spacing:1px;
 }
 a { color:#1BA1E2; }
 .main-menu li a, a.brand {
@@ -169,4 +170,8 @@ form input, form textarea {
   color: #ffffff;
   background-color: #2f96b4;
   *background-color: #2a85a0;
+}
+.rr-slider, .mn1-slider {
+	margin:10px 0px;
+	text-align:center;
 }
