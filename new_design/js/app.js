@@ -22,17 +22,38 @@ jQuery(document).ready(function ($) {
 	
 	}  
 	//$("a.brand").lettering().animateLetters({opacity:0},{opacity:1},{time:1200,reset:true});
-	function sendMail() {
-		// First check fields aren't blank 
-		
-		// Make a request to backend
-		$.ajax({
-		  type: 'POST',
-		  url: 'email.php',
-		  data: data,
-		  success: function () { alert('Email Success!'); },
-		  error: function() { alert('Email error'); },
-		  dataType: dataType
-		});	
+	var email=$('.email'), subj=$('.subject'), msg=$('.message'), submit=$('.btn-submit');
+	function checkInputs(){
+	  if(email.val() != '' && subj.val() != '' && msg.val() != '' && submit.attr("disabled") == "disabled"){
+		submit.removeAttr("disabled");
+	  }
+	  else if((email.val() == '' || subj.val() == '' || msg.val() == '') && submit.attr("disabled") == undefined){
+		submit.attr("disabled", "disabled");
+	  }
 	}
+	email.keyup(function () {
+	  checkInputs();
+	});
+	subj.keyup(function () {
+	  checkInputs();
+	});
+	msg.keyup(function () {
+	  checkInputs();
+	});
+	
+	$("#emailForm").submit(function(event) {
+		/* stop form from submitting normally */
+		event.preventDefault(); 
+		// Make a request to backend
+		$.post('email.php', { emailAddr: email.val(), subject: subj.val(), message: msg.val() }, 
+			function( data ) {
+			  if(data) {
+				  alert('Email Success! :)');
+			  }
+			  else {
+				  alert('Email Error! Please provide a valid email address.');  
+			  }
+		  });
+		  return false;
+	});
 });
