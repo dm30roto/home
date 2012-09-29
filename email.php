@@ -76,10 +76,7 @@ $msg = $_POST['message'];
 if($eAddr != null && $eAddr != '' && $subj != null && $subj != '' && $msg != null && $msg != '') {
 	if(validEmail($eAddr)) {
 		mail('dm30roto@gmail.com', $subj, $eAddr.' wants you to see this message! Check it out:   '.$msg);
-		return true;
-	}
-	else {
-		return false;
+		return 'true';
 	}
 }
 ?>
