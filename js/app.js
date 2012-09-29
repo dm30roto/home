@@ -45,6 +45,21 @@ jQuery(document).ready(function ($) {
 		/* stop form from submitting normally */
 		event.preventDefault(); 
 		// Make a request to backend
+		$.ajax({
+            type:'POST',
+            url: 'email.php',
+            data: { emailAddr: email.val(), subject: subj.val(), message: msg.val() },
+            success:function(data){
+                    //Need to split data here
+					if(data) {
+				  alert('Email Success! :)');
+			  }
+			  else {
+				  alert('Email Error! Please provide a valid email address.');  
+			  }
+            }
+        });
+/*
 		$.post('email.php', { emailAddr: email.val(), subject: subj.val(), message: msg.val() }, 
 			function( data ) {
 			  if(data) {
@@ -55,5 +70,5 @@ jQuery(document).ready(function ($) {
 			  }
 		  });
 		  return false;
-	});
+	*/});
 });
