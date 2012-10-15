@@ -171,7 +171,14 @@ form input, form textarea {
   background-color: #2f96b4;
   *background-color: #2a85a0;
 }
-.rr-slider, .mn1-slider {
-	margin:10px 0px;
-	text-align:center;
+
+hr {
+	margin:10px 0px; 
+	border-color:#999;
+}
+footer small {
+	color:#999;
+}
+footer {
+	margin-bottom:15px;
 }
