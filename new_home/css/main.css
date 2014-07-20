@@ -1,0 +1,147 @@
+body 
+{
+	padding-top: 50px;
+	color: white;
+}
+p 
+{
+	font-size: 20px;
+}
+a.navbar-brand i.logoIcon 
+{
+	font-size:75%;
+}
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand 
+{
+	color: #e3e7f2;
+}
+.contentContainer 
+{
+	padding: 20px 40px;
+}
+.contentContainer h1 
+{
+	text-align: center;
+}
+.logoIcon 
+{
+	font-size: 40%;
+	display: inline-block;
+  	vertical-align: middle;
+  	padding-bottom: 5px;
+}
+#home
+{
+	background-color: #377BD9;
+	color:white;
+	text-align: center;
+	opacity: 0;
+}
+.homeLogo
+{
+	font-size: 54px;
+}
+p.contactLinks a
+{
+	text-decoration: none;
+}
+h1 
+{
+	font-size: 48px;
+	padding-bottom: 20px;
+}
+#about 
+{
+	background-color: white;
+	color:#818C9A;
+	opacity: 0;
+}
+.education
+{
+	margin: 20px;
+}
+#skills
+{
+	background-color: #FF7E2E;
+}
+.progress
+{
+	height:15px;
+	background-color: #C9C2F7;
+}
+.progress-bar 
+{
+	background-color: #594DA6;
+}
+#experience
+{
+	background-color: #27D8B0;
+}
+.thumbnail 
+{
+	min-height: 300px;
+}
+.thumbnail .caption span 
+{
+	color:#818C9A
+}
+ .hideme
+ {
+ 	opacity: 0;
+ }
+/*.contact
+{
+	//background-color: #23262b;
+	background-color: #594DA6;
+}*/
+.footer
+{
+	background-color: #333333;
+	padding-bottom: 10px;
+}
+footer p 
+{
+	font-size: 12px;
+}
+.pull-right a
+{
+	text-decoration: none;
+	color: white;
+}
+.pull-right a:hover
+{
+	text-decoration: none;
+	color: #CCCCCC;
+}
+
+@media (min-width: 768px) {
+	.thumbnail 
+	{
+		min-height: 300px;
+	}
+	/*body 
+	{
+		color: #999999;
+	}
+	.featurette-heading 
+	{
+		font-size: 50px;
+	}
+	.xp-container  .featurette-heading 
+	{
+		font-size:40px;	
+	}
+	.xp-container  
+	{
+		margin: 10px 40px 50px;
+	}
+	p 
+	{
+		font-size: 21px;
+	}
+  	.contact-links a 
+	{
+		font-size: 40px;
+		margin-right: 10px;
+	}*/
+}

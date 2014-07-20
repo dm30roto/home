@@ -1,0 +1,106 @@
+body 
+{
+	background-color: #23262b;
+  	color: #fefefe;
+	padding-top: 50px;
+}
+.jumbotron h1, .jumbotron p
+{
+	color:#5a5a5a;
+}
+h2
+{
+	color: #e3e7f2;
+}
+h3 
+{
+	color:#5a5a5a;
+}
+p 
+{
+	margin-bottom: 20px;
+	font-size: 16px;
+	font-weight: 200;
+	line-height: 1.4;
+}
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand 
+{
+	color: #e3e7f2;
+}
+.center-row 
+{
+	text-align: center;
+}
+.well 
+{
+	margin:0px;
+	background: none;
+	border: none;
+}
+.badge
+{
+	background-color: #5a5a5a;
+	font-weight: normal;
+	font-size: 18px;
+	margin-bottom: 8px;
+}
+.glyphicon-chevron-right, .glyphicon-chevron-left 
+{
+	color:#5a5a5a;
+}
+.xp-container 
+{
+	margin: 10px 10px 30px;
+}
+.carousel-control
+{
+	width:5%;
+}
+.featurette-divider 
+{
+  margin: 40px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading 
+{
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.carousel-control.left, .carousel-control.right 
+{
+	background: none;
+}
+.contact-links a 
+{
+	font-size: 24px;
+	margin-right: 10px;
+}
+@media (min-width: 768px) {
+	body 
+	{
+		color: #999999;
+	}
+	.featurette-heading 
+	{
+		font-size: 50px;
+	}
+	.xp-container  .featurette-heading 
+	{
+		font-size:40px;	
+	}
+	.xp-container  
+	{
+		margin: 10px 40px 50px;
+	}
+	p 
+	{
+		font-size: 21px;
+	}
+  	.contact-links a 
+	{
+		font-size: 40px;
+		margin-right: 10px;
+	}
+}
