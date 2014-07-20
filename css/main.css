@@ -1,84 +1,125 @@
 body 
 {
-	background-color: #23262b;
-  	color: #fefefe;
 	padding-top: 50px;
-}
-.jumbotron h1, .jumbotron p
-{
-	color:#5a5a5a;
-}
-h2
-{
-	color: #e3e7f2;
-}
-h3 
-{
-	color:#5a5a5a;
+	color: white;
 }
 p 
 {
-	margin-bottom: 20px;
-	font-size: 16px;
-	font-weight: 200;
-	line-height: 1.4;
+	font-size: 20px;
+}
+a.navbar-brand i.logoIcon 
+{
+	font-size:75%;
 }
 .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand 
 {
 	color: #e3e7f2;
 }
-.center-row 
+.contentContainer 
+{
+	padding: 20px 40px;
+}
+.contentContainer h1 
 {
 	text-align: center;
 }
-.well 
+.logoIcon 
 {
-	margin:0px;
-	background: none;
-	border: none;
+	font-size: 40%;
+	display: inline-block;
+  	vertical-align: middle;
+  	padding-bottom: 5px;
 }
-.badge
+#home
 {
-	background-color: #5a5a5a;
-	font-weight: normal;
-	font-size: 18px;
-	margin-bottom: 8px;
+	background-color: #377BD9;
+	color:white;
+	text-align: center;
+	opacity: 0;
 }
-.glyphicon-chevron-right, .glyphicon-chevron-left 
+.homeLogo
 {
-	color:#5a5a5a;
+	font-size: 54px;
 }
-.xp-container 
+p.contactLinks a
 {
-	margin: 10px 10px 30px;
+	text-decoration: none;
 }
-.carousel-control
+h1 
 {
-	width:5%;
+	font-size: 48px;
+	padding-bottom: 20px;
 }
-.featurette-divider 
+#about 
 {
-  margin: 40px 0; /* Space out the Bootstrap <hr> more */
+	background-color: white;
+	color:#818C9A;
+	opacity: 0;
+}
+.education
+{
+	margin: 20px;
+}
+#skills
+{
+	background-color: #FF7E2E;
+}
+.progress
+{
+	height:15px;
+	background-color: #C9C2F7;
+}
+.progress-bar 
+{
+	background-color: #594DA6;
+}
+#experience
+{
+	background-color: #27D8B0;
+}
+.thumbnail 
+{
+	min-height: 300px;
+}
+.thumbnail .caption span 
+{
+	color:#818C9A
+}
+ .hideme
+ {
+ 	opacity: 0;
+ }
+/*.contact
+{
+	//background-color: #23262b;
+	background-color: #594DA6;
+}*/
+.footer
+{
+	background-color: #333333;
+	padding-bottom: 10px;
+}
+footer p 
+{
+	font-size: 12px;
+}
+.pull-right a
+{
+	text-decoration: none;
+	color: white;
+}
+.pull-right a:hover
+{
+	text-decoration: none;
+	color: #CCCCCC;
 }
 
-/* Thin out the marketing headings */
-.featurette-heading 
-{
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
-}
-.carousel-control.left, .carousel-control.right 
-{
-	background: none;
-}
-.contact-links a 
-{
-	font-size: 24px;
-	margin-right: 10px;
-}
 @media (min-width: 768px) {
-	body 
+	.thumbnail 
+	{
+		min-height: 300px;
+	}
+	/*body 
 	{
 		color: #999999;
 	}
@@ -102,5 +143,5 @@ p
 	{
 		font-size: 40px;
 		margin-right: 10px;
-	}
+	}*/
 }
