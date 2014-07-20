@@ -1,0 +1,35 @@
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 40px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.xp-container .featurette-heading 
+{
+  color:#5a5a5a;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 400px) {
+  .xp-container  
+  {
+    height:500px;
+    margin: 10px 10px 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .featurette-heading 
+  {
+    font-size: 50px;
+  }
+}
