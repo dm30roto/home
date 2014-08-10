@@ -2,6 +2,13 @@ body
 {
 	padding-top: 50px;
 	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 }
 p 
 {
@@ -14,6 +21,7 @@ a.navbar-brand i.logoIcon
 .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand 
 {
 	color: #e3e7f2;
+	font-size: 20px;
 }
 .contentContainer 
 {
@@ -37,9 +45,17 @@ a.navbar-brand i.logoIcon
 	text-align: center;
 	opacity: 0;
 }
+#home h3
+{
+	font-weight: 200;
+}
 .homeLogo
 {
 	font-size: 54px;
+}
+.contactLinks 
+{
+	margin: 40px 0px 20px 0px;
 }
 p.contactLinks a
 {
@@ -52,8 +68,9 @@ h1
 }
 #about 
 {
-	background-color: white;
-	color:#818C9A;
+	background-color: #FCFCFC;
+	/*color:#818C9A;*/
+	color:#000000;
 	opacity: 0;
 }
 #skills
@@ -77,19 +94,18 @@ h1
 {
 	min-height: 300px;
 }
-.thumbnail .caption span 
+.thumbnail .caption p 
 {
 	color:#818C9A
 }
- .hideme
- {
- 	opacity: 0;
- }
-/*.contact
+h3 small
 {
-	//background-color: #23262b;
-	background-color: #594DA6;
-}*/
+	font-weight: 300;
+}
+.hideme
+{
+	opacity: 0;
+}
 .footer
 {
 	background-color: #333333;
@@ -97,7 +113,7 @@ h1
 }
 footer p 
 {
-	font-size: 12px;
+	font-size: 14px;
 }
 .pull-right a
 {
@@ -115,29 +131,4 @@ footer p
 	{
 		min-height: 300px;
 	}
-	/*body 
-	{
-		color: #999999;
-	}
-	.featurette-heading 
-	{
-		font-size: 50px;
-	}
-	.xp-container  .featurette-heading 
-	{
-		font-size:40px;	
-	}
-	.xp-container  
-	{
-		margin: 10px 40px 50px;
-	}
-	p 
-	{
-		font-size: 21px;
-	}
-  	.contact-links a 
-	{
-		font-size: 40px;
-		margin-right: 10px;
-	}*/
 }
